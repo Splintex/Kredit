@@ -183,6 +183,7 @@ a:hover { text-decoration: none; }
 
 .select__list { position: absolute; display: none; left: 0; right: 0; top: 100%; z-index: 100; border: 1px solid #a6ce38; border-top: 0; background: white; }
 .select__list li { padding: 5px 11px; cursor: pointer; line-height: 1; }
+.select__list a { display: block; color: #a6ce38; text-decoration: none; }
 
 .select_violet .select__text { height: 31px; line-height: 31px; border: 0; text-transform: capitalize; border-bottom: 1px solid #421f58; background: #4f2668; }
 .select_violet .select__text:after { background: url('../img/icons-s3adaf71889.png') 0 -501px no-repeat; width: 11px; height: 7px; right: 13px; }
