@@ -1,0 +1,718 @@
+.news-wrap
+	+clr
+.news
+	float: left
+	vertical-align: top
+	width: 48.6%
+	margin-bottom: 2.9%		
+	font-size: 13px
+	background: #f5f6f6 
+	+box-shadow(1px 1px 5px #c7cdd3)
+	+tr(all .2s linear)
+	+r(step480)
+		float: none
+		margin: 0 auto 15px
+		width: 90%
+	&:hover
+		+box-shadow(none)
+	&:nth-child(2n)
+		float: right
+		+r(step480)
+			float: none
+.news__img
+	position: relative 
+	float: left
+	+r(step860)
+		float: none
+	a
+		display: block
+		img
+			display: block
+			margin: 0 auto 
+			max-width: 100%
+			height: auto
+.news__date
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 2
+	padding: 12px 
+	color: #fff
+	font-weight: bold 
+	background: rgba(100,56,133,.9) 
+	i
+		display: inline-block
+		margin-right: 5px
+		vertical-align: middle
+		+s(cal)
+.news__main
+	overflow: hidden
+.news__title
+	background: $green
+	font-size: 16px
+	font-weight: bold
+	+tr(background .2s linear)
+	&:hover
+		background: #8bb122 
+		a
+			text-decoration: underline
+	+r(step480)
+		font-size: 14px
+	a
+		display: block
+		padding: 9px 15px  	
+		color: #fff
+		text-decoration: none
+		
+.news__cont  
+	padding: 11px 15px 
+	font: normal 13px Arial, sans-serif
+	
+.pagin
+	margin: 1.7% auto 3%
+	max-width: 61.3%  
+	font-size: 0
+	text-align: center
+	+clr
+	+r(step680)	
+		padding: 0 25px 
+		max-width: 100%
+		+box
+	a
+		display: inline-block
+		margin-left: 10px
+		height: 28px
+		line-height: 28px
+		color: #fff
+		font-size: 13px
+		text-decoration: none 
+		vertical-align: top
+		+r(step480)
+			margin-bottom: 10px
+		&:nth-child(2)
+			margin-left: 0
+		&:active
+			position: relative
+			top: 2px
+			border-bottom: 0
+.pagin__prev
+	float: left
+	padding: 0 9px 0 7px 
+	background: $green
+	border-bottom: 2px solid #5d7a0f
+	position: relative
+	&:hover
+		background: #b1d54b   
+		&:before
+			+arr(16,28,#b1d54b,l)
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		left: -16px  
+		top: 0
+		+rotate(360)
+	&:before
+		z-index: 2
+		+arr(16,28,$green,l)
+	&:after
+		top: 2px
+		+arr(16,28,#5d7a0f,l)
+	&:active
+		&:after
+			top: 0  
+.pagin__next
+	position: relative
+	float: right
+	padding: 0 7px 0 9px 
+	background: #8454a1
+	border-bottom: 2px solid #5f2d7e
+	&:hover
+		background: #9163ab 
+		&:before	
+			+arr(16,28,#9163ab,r) 
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		right: -16px
+		top: 0
+	&:before
+		z-index: 2
+		+arr(16,28,#8454a1,r)
+	&:after
+		top: 2px
+		+arr(16,28,#5f2d7e,r)
+	&:active
+		&:after
+			top: 0
+.pagin__link
+	width: 24px
+	text-align: center
+	background: $green
+	border-bottom: 2px solid #5d7a0f
+	&:hover
+		background: #b5d650 
+	&.is-active
+		margin-top: 1px
+		background: #787878
+		height: 27px
+		line-height: 27px 
+		border-bottom: 0
+.banner-row
+	padding: 33px 0 27px 
+	background: #dcdfe1 url(../img/bg2.jpg) 0 0 repeat 
+	+box-shadow(inset 0 1px 20px rgba(0,0,0,.2))
+.banner-wrap
+	+clr
+	margin-right: -4%
+.banner
+	float: left
+	margin-right: 2.5%
+	width: 30.5%
+	+r(step480)
+		width: 45%
+		margin: 0 2.5% 2.5% 0
+	img
+		max-width: 100%
+		height: auto
+.credit-wrap
+	padding-bottom: 3.8%
+	font-size: 0
+.credit
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 2%
+	width: 49%
+	font-size: 13px
+	+tr(all .2s linear)
+	+box-shadow(0 1px 4px #c7cdd3)
+	&:hover
+		+box-shadow(none)
+	&:nth-child(2n)
+		margin-left: 2%
+		+r(step480)
+			margin: 0 auto 10px
+	+r(step480)
+		display: block
+		margin: 0 auto 10px
+		width: 90%
+	+r(step360)
+		width: 100%
+.credit__img
+	display: block
+	+box-shadow(0 1px 4px #c7cdd3)
+	position: relative
+	text-decoration: none
+	img
+		display: block
+		max-width: 100%
+		height: auto
+.credit__name
+	position: absolute
+	top: 0
+	left: 0
+	padding: 14px 12px 11px 21px
+	color: #fff
+	font-size: 24px
+	font-weight: bold   
+	background: rgba(124,182,0,.85) 
+	+tr(background .2s linear)
+	+r(step760)
+		font-size: 16px
+		padding: 10px
+	+r(step480)
+		position: static
+	i
+		display: inline-block
+		margin-left: 10px
+		+s(play)
+	span
+		border-bottom: 1px solid transparent 
+	&:hover
+		background: rgba(124,182,0,1) 
+		span
+			border-bottom-color: #fff   
+
+		
+.credit__info
+	background: #fff
+	color: #4a4d4f
+	font: normal 13px Arial,sans-serif  
+	+background-image(linear-gradient(top, rgba(199,206,211,.32) 0%, rgba(255,255,255,.32) 69.09%, rgba(255,255,255,.32) 100%))
+	padding: 17px 15px 19px 21px 
+	+clr
+	+r(step760)
+		padding: 10px
+	.btn 
+		float: right
+		padding: 11px 22px 
+		font-size: 14px
+		font-weight: bold
+		+r(step860)
+			padding: 10px 
+			font-size: 12px
+			font-weight: normal
+		+r(step760)
+			float: none
+			margin-bottom: 10px
+		&:active
+			position: relative
+			top: 2px
+.credit__text
+	overflow: hidden
+	padding-right: 3%
+	+r(step760)
+		padding: 0
+.date
+	line-height: 1
+	i
+		display: inline-block
+		margin: -2px 5px 0 0
+		vertical-align: middle
+		+s(cal2)
+.article-banner
+	float: right
+	width: 32%
+	margin: 27px 0 0 5%
+	+r(step860)
+		float: none
+		margin: 0
+	img
+		max-width: 100%
+		height: auto
+		+r(step860)
+			width: auto
+			margin: 15px 0 0
+.article
+	padding: 11px 0 6.2%
+	width: 63%
+	font: normal 13px Arial,sans-serif
+	+r(step860)
+		width: 100%
+		+box
+	p
+		margin: 16px 0
+	a
+		color: #78A302
+	h2
+		margin-bottom: 9px
+		font-size: 16px
+	ul
+		li
+			position: relative
+			margin-bottom: 1px
+			padding-left: 40px
+			&:before
+				content: ""
+				position: absolute
+				left: 15px
+				top: 5px
+				width: 8px
+				height: 8px
+				+border-radius(50%)
+				background: #2e3134
+	table
+		margin-bottom: 18px
+		width: 100%
+		background: #fff 
+		+r(step480)
+			font-size: 11px	
+		thead
+			tr
+				background: #fff 
+			td
+				margin-bottom: 11px
+				font-size: 18px
+				font-weight: bold
+				color: #662d91
+		tr
+			&:nth-child(2n+1)
+				background: #f6faeb 
+		td  
+			padding: 10px 20px
+			+box
+			vertical-align: middle
+			+r(step480)
+				height: auto
+				padding: 5px 0 
+	.char
+		li
+			padding: 10px 
+			&:before
+				display: none
+.char
+	padding: 17px 3% 
+	background: #fff 
+	+box-shadow(0 0 5px rgba(0,0,0,.3))
+	li
+		padding: 10px 
+		&:nth-child(2n+1)
+			background: #f6faeb 
+.char__title
+	margin-bottom: 11px
+	font-size: 18px
+	font-weight: bold
+	color: #662d91
+.char_table
+	margin-bottom: 18px
+	padding: 17px 0 
+	background: none
+	+box-shadow(none)
+	+r(step480)
+		font-size: 11px	
+	.char__title
+		margin-bottom: 20px
+		padding-left: 36px
+	ul
+		display: table
+		width: 100%
+	li
+		display: table-row
+		&:nth-child(2n)
+			background: none
+		&:nth-child(2n+1)
+			background: rgba(197,205,208,.4)
+		span
+			display: table-cell
+			height: 50px
+			vertical-align: middle
+			+box
+			+r(step480)
+				height: auto
+				padding: 5px 0 
+	.char__cell1
+		padding: 0 10px 0 36px 
+		width: 41.5%
+		font-size: 16px
+		+r(step760)
+			width: 25%
+			font-size: 12px
+			padding: 0 10px		
+		+r(step480)
+			font-size: 11px	
+	.char__cell2
+		padding-right: 10px
+		width: 26%
+		font-size: 16px
+		+r(step760)
+			width: 25%
+			font-size: 12px
+			padding: 0 10px	
+		+r(step480)
+			font-size: 11px	
+		
+.credit-item
+	margin-bottom: 17px
+	border-bottom: 2px solid #abacad 
+	padding: 20px
+	background: #fff  
+	+clr
+	+box-shadow(0 0 3px #c7cdd3)
+	.list
+		margin-bottom: 32px
+.credit-item__left
+	float: left
+	width: 344px
+	margin-right: 4%
+	+r(step760)
+		float: none
+		margin: 0 0 15px 
+	+r(step480)
+		width: 100%
+	img
+		display: block
+		max-width: 100%
+		height: auto
+		+r(step480)
+			width: 100%
+			margin: 0 0 10px 
+	.btn
+		float: right
+		margin-top: 22px
+		text-align: center
+		font-weight: bold
+		font-size: 16px 
+		&:first-child
+			float: left
+			+r(step480)
+				float: none
+				margin: 0 0 10px
+		+r(step480)
+			display: block
+			float: none
+			width: 100%
+			+box
+			margin: 0 0 10px 
+.credit-item__right
+	overflow: hidden
+	padding-right: 3%
+	
+.credit-item__title
+	padding-bottom: 13px
+	margin-bottom: 17px
+	border-bottom: 1px solid #d5d5d6 
+	font-size: 18px
+	line-height: 1.4
+	font-weight: bold
+	color: #662d91 
+	+r(w480)
+		font-size: 16px
+.action-row
+	padding-bottom: 6px
+.action-row__title
+	margin-bottom: 25px
+	padding-left: 36px
+	font-weight: bold
+	font-size: 18px
+	color: #662d91 
+.action
+	float: left
+	margin: 0 0 24px 24px
+	padding: 11px 11px 13px
+	width: 320px
+	+box
+	+clr
+	text-decoration: none
+	color: #fff 
+	background: #fff
+	+box-shadow(0 0 5px #c7cdd3)
+	+r(step680)
+		float: none
+		display: block
+		margin: 0 auto 15px 
+	&:first-child
+		margin-left: 0
+		+r(step680)
+			margin: 0 auto 15px
+.action__img
+	position: relative
+	float: left
+	margin-right: 15px
+	width: 115px
+	img
+		display: block
+		max-width: 100%
+		height: auto
+.action__sponsor
+	position: absolute
+	right: -12px
+	bottom: -7px
+.action__main
+	overflow: hidden
+.action__title
+	padding: 5px 9px 
+	max-height: 40px
+	background: $green 
+.action__price
+	display: inline-block
+	padding: 3px 9px 4px
+	max-height: 44px
+	overflow: hidden
+	line-height: 1
+	background: $violet 
+	span
+		display: block
+		font-weight: bold
+		font-size: 24px
+	
+
+.cont
+	margin-bottom: 15px
+	+clr
+	font: normal 13px Arial,sans-serif
+.cont__item
+	position: relative
+	float: left
+	margin-right: 4%
+	padding-left: 42px
+	+r(step680)
+		float: none
+		display: inline-block
+		margin-bottom: 20px
+		vertical-align: top
+	&:first-child
+		padding-left: 34px
+	.icon-point
+		position: absolute
+		top: 0
+		left: 0
+		+s(point)
+	.icon-cont
+		position: absolute
+		top: 0
+		left: 0
+		+s(cont)
+	strong
+		color: #662d91 
+.cont__link
+	float: left
+	padding: 6px 0 10px 10px
+	width: 138px
+	+box
+	font-weight: bold
+	text-decoration: none
+	color: $green 
+	border: 2px solid
+	+r(step680)
+		float: none
+		display: inline-block
+		margin-bottom: 20px
+		vertical-align: top
+	&:hover
+		span
+			border-bottom-color: transparent 
+	div, i
+		display: inline-block
+	span
+		border-bottom: 2px dotted 
+	div
+		width: 80px
+	i
+		margin-right: 12px
+		+s(points)
+
+.map
+	position: relative
+	height: 344px
+	overflow: hidden
+	iframe
+		display: block
+		width: 100%
+		height: 100%
+	+r(step480)
+		height: 200px
+.tooltip
+	position: absolute
+	z-index: 200
+	min-width: 232px
+	+clr
+	background: #fff 
+	font: normal 12px Arial,sans-serif
+	img
+		float: left
+		position: relative
+		z-index: 2
+	&:after
+		content: ""
+		position: absolute
+		z-index: 0
+		bottom: -7px
+		left: 0
+		+s(shadow) 
+	&:before
+		content: ""
+		position: absolute
+		bottom: -10px
+		left: 0
+		z-index: 1
+		+arr(10,10,#A6CE39,tl) 
+.tooltip__main
+	position: relative
+	z-index: 2
+	padding: 5px 10px 
+	height: 67px
+	overflow: hidden
+	background: #fff
+	+box 
+	div
+		+clr
+	span
+		float: right
+.tooltip__title
+	font-size: 15px
+	font-weight: bold
+	color: #662d91 
+	
+.window-wrap
+	position: relative
+.window
+	position: absolute
+	top: -424px
+	right: 0
+	z-index: 1000
+	padding: 22px 20px 20px
+	width: 336px
+	+box
+	color: #f3dfff
+	background: #6b2f8f 
+	+r(step960)
+		top: -345px
+	+r(step860)
+		position: static
+		width: 70%
+		margin: 15px auto 
+	+r(step480)
+		width: 100%
+	.btn
+		display: inline-block
+		margin-top: 7px
+		padding: 0 17px
+		height: 37px
+		text-transform: uppercase
+		font-size: 15px
+		font-weight: bold  
+.window__title
+	margin-bottom: 15px
+	font-size: 24px
+.to-center
+	text-align: center
+	
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 10000
+	display: none
+	background: rgba(34,7,50,.8) 
+.popup-wrap
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 20000
+	display: none
+	overflow-y: auto
+	overflow-x: hidden
+	+r(step480)
+		padding: 10px
+.popup
+	position: relative
+	padding: 16px 18px
+	+box 
+	margin: 162px auto 0
+	background: #fff 
+	+r(step860)
+		margin: 15px auto
+		width: 90% !important
+	+r(step480)
+		margin: 0
+		width: 100% !important
+.popup_s
+	width: 364px 
+.popup_m
+	width: 400px 
+.popup_w
+	width: 767px 
+.popup__close
+	position: absolute
+	top: 26px
+	right: 22px
+	+s(close)
+	opacity: .5
+	+tr(all .2s linear)
+	&:hover
+		opacity: 1
+	&:active
+		top: 27px
+.popup__title
+	font-size: 30px
+	font-weight: bold
+	color: #662d91 
+	+r(step860)
+		font-size: 24px
+	+r(step760)
+		font-size: 20px

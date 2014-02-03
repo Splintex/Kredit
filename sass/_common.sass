@@ -1,0 +1,426 @@
+$green: #a6ce38
+$green_dark: #5d7a0f
+$violet: #8e5bac
+$violet_dark: #441a61
+$gray: #5e656d
+html
+	+scrollbar
+		width: 14px
+	+scrollbar-track	
+		background: #bec3c3
+	+scrollbar-thumb
+		background: #bec3c3
+	+scrollbar-track-piece 
+		background: #e1e1e1
+body
+	min-width: 320px
+	+font
+	font-size: 13px
+	line-height: 1.2
+	font-weight: 400 
+	background: #eaedee url(../img/bg.png) 0 0 repeat 
+	&.is-popup-open
+		overflow: hidden
+a
+	&:hover
+		text-decoration: none
+.l-layout	 
+	margin: 0 auto -120px
+	position: relative
+	min-height: 100%
+	height: auto !important
+	height: 100% 
+.wrapper
+	overflow: hidden
+.wrap
+	+clr
+.push
+	clear: both
+	height: 120px
+.l-container
+	padding: 0 10px
+	margin: 0 auto 
+	max-width: 1008px 
+	+r(step480)
+		padding: 0 5px 
+.header
+	position: relative
+	padding: 17px 0 15px
+	background: #fff 
+	+r(step450)
+		padding: 10px 0 25px
+	&:after
+		content: ""
+		position: absolute
+		left: 50%
+		bottom: 9px
+		margin-left: -48%
+		width: 96%
+		z-index: -1
+		height: 50px
+		box-shadow: 0 5px 21px rgba(0,0,0,.2)
+		border-radius: 50%
+	.l-container
+		+clr
+		position: relative
+.header__logo
+	float: left
+	margin: 6px 0 0
+	+s(logo)
+	+r(step860)
+		+s(logo2)
+	+r(step450)
+		margin-top: 0
+.header__main
+	position: absolute
+	left: 173px
+	right: 10px
+	top: 0
+	+r(step860)
+		left: 138px
+	+r(step450)
+		position: static
+		float: right
+		margin-left: 10px
+.header__top
+	margin-bottom: 13px
+	padding-bottom: 11px
+	+clr
+	border-bottom: 1px solid #f6f6f6
+	+r(step860)
+		border-bottom: 0
+		margin-bottom: 11px
+		padding-bottom: 0
+.header__nav
+	position: relative
+	float: left
+	font-size: 0
+	white-space: nowrap
+	+r(step860)
+		width: 149px
+	+r(step450)
+		float: none
+		margin-bottom: 10px
+	a
+		display: inline-block
+		margin-right: 8.5%
+		color: $green
+		font-size: 15px 
+		+r(step960)
+			margin-right: 3.5%
+	.btn_green
+		display: none
+		position: relative
+		padding: 4px 8px
+		+box
+		text-align: left
+		width: 100%  
+		font-weight: bold
+		border-bottom-width: 1px 
+		&:after
+			content: ""
+			position: absolute
+			right: 11px
+			top: 11px
+			+s(arr1) 
+		&:active
+			top: 0
+			border-bottom: 1px solid #5d7a0f
+		+r(step860)
+			display: block
+.header__nav-list
+	+r(step860)
+		display: none
+		left: 0
+		right: 0
+		margin-right: 0
+		padding: 8px 0 
+		position: absolute
+		z-index: 200
+		background: $green  
+		a
+			display: block
+			padding: 2px 8px 
+			color: #fff 
+			text-decoration: none
+
+.header__set
+	float: right
+	+r(step450)
+		float: none
+	.select
+		display: inline-block
+		width: 51px
+		margin-right: 14px
+		vertical-align: middle
+		+r(step860)
+			margin-right: 9px
+	.btn-simple
+		+r(step860)
+			padding: 0 15px 
+			span
+				display: none
+
+.header__bottom
+	+clr
+	font-size: 0
+.header__btns
+	float: left
+	margin-bottom: 11px
+	font-size: 0
+	.btn_violet
+		margin-left: 16px
+		padding: 6px 15px 5px
+		width: 152px
+		+r(step860)
+			margin-left: 7px
+		+r(step800)
+			margin-left: 0	
+			font-size: 11px
+		div
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+		strong
+			margin-top: 6px
+		&:first-child
+			margin-left: 0
+		&:active
+			position: relative
+			top: 2px
+		+r(step800)
+			border-bottom-width: 1px 
+			&:active
+				top: 0
+	+r(step800)
+		position: relative
+		width: 100px
+	+r(step450)
+		float: none
+		position: absolute
+		bottom: -30px
+		left: 5px
+.header__btns-wrap
+	+r(step860)
+		display: none
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 200
+		width: 149px
+	.btn_violet   
+		+r(step450)
+			border-bottom-width: 1px 
+// .header__btns-key   
+// 	position: relative
+// 	display: none
+// 	&:after
+// 		content: ""
+// 		position: absolute
+// 		right: 12px
+// 		top: 50%
+// 		margin-top: -2px
+// 		+s(arr4)
+// 	+r(step860)
+// 		display: block
+// 		width: 100%   
+.header__cont         
+	overflow: hidden
+	padding-top: 2px
+	text-align: right
+	+r(step1000)
+		overflow: visible
+	.btn-call
+		+r(step1000)
+			display: none
+.header__phone
+	display: inline-block
+	margin-right: 11%
+	vertical-align: middle
+	font-size: 14px
+	color: $gray 
+	text-align: left
+	+r(step1000)
+		margin-right: 0
+		display: block
+		text-align: right
+		span
+			display: none
+	div
+		font-size: 20px
+.header__call
+	display: inline-block
+	vertical-align: middle
+.btn-call
+	display: inline-block
+	vertical-align: middle
+	width: 148px
+	position: relative
+	+box
+	padding: 0 10px 0 56px
+	height: 43px
+	background: #86A72B 
+	line-height: 41px
+	font-size: 13px
+	color: #fff 
+	text-decoration: none
+	border-bottom: 2px solid #5d7a0f 
+	span
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+	.btn-call__icon
+		line-height: 41px
+	&:hover
+		+g(#a3bd4c, #85a629)
+		.btn-call__icon
+			+g(#c2de67, #acd142)
+			&:after
+				+arr(6,10,#b5d753,r)
+	&:active
+		border-bottom: 0
+		top: 2px
+.btn-call__icon
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 43px
+	background: $green
+	text-align: center
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(phone)
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		margin-top: -5px
+		right: -6px
+		+arr(6,10,$green,r) 
+.header__feedback
+	display: none
+	font-size: 12px
+	color: $green
+	border-bottom: 1px dotted  
+	text-decoration: none
+	+r(step1000)
+		display: inline-block
+
+.footer
+	position: relative
+	padding-top: 21px
+	z-index: 2
+	height: 120px
+	+box
+	background: url(../img/footer-bg.png) 0 0 repeat 
+	.l-container
+		+clr
+	.soc
+		float: left
+		margin-right: 10%
+		+r(step900)
+			margin-right: 10px
+		+r(step760)
+			position: absolute
+			top: 27px
+			left: 29px
+		+r(step480)
+			right: 5px
+			left: auto
+.footer__info
+	float: left
+	margin-right: 9%
+	+r(step900)
+		margin-right: 15px
+	+r(step760)
+		position: absolute
+		bottom: 0
+		left: 29px
+		right: 0
+		+clr
+	+r(step480)
+		left: 5px
+		top: 17px
+		width: 193px
+		bottom: auto
+.footer__logo
+	margin-bottom: 20px
+	line-height: 1
+	+r(step760)
+		float: left
+	+r(step480)
+		float: none
+	i,div
+		display: inline-block
+		vertical-align: middle
+	i
+		margin-right: 13px
+		+s(logo-footer)  
+	div
+		font-size: 11px
+		color: $gray 
+.footer__created
+	margin-left: 21px
+	line-height: 1
+	+r(step760)
+		float: right
+	+r(step480)
+		float: none
+	i,div
+		display: inline-block
+		vertical-align: middle
+	i
+		margin-right: 8px
+		+s(logo-sparkle) 
+	div
+		font-size: 11px
+		color: $gray 
+	a
+		color: $gray
+		text-decoration: none
+		&:hover
+			color: $violet 
+.footer__nav
+	float: left
+	font-size: 13px
+	li
+		margin-bottom: 8px
+	a
+		display: inline-block
+		padding: 2px 8px 3px
+		color: $violet 
+		&:hover
+			background: $violet
+			color: #fff  
+			+box-shadow(0 1px 0 rgba(255,255,255,.15), inset 0 0 1px 1px rgba(0,0,0,.15))
+	+r(step760)
+		display: none
+		
+.footer__right
+	float: right
+	max-width: 197px
+	.btn-wtf
+		margin-bottom: 11px
+		width: 100%
+	+r(step760)
+		display: none
+
+.footer__search
+	width: 100%
+	position: relative
+	input
+		padding: 0 32px 0 15px 
+		width: 100%
+		height: 33px
+		+box
+		background: rgba(255,255,255,.9)
+		+box-shadow(0 1px 0 rgba(255,255,255,.15), inset 0 1px 2px rgba(0,0,0,.44))
+	i
+		position: absolute
+		right: 17px
+		top: 50%
+		margin-top: -6px
+		+s(glass)
+	

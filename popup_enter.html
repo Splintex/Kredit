@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Popup enter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.swipe.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body class="is-popup-open">
+
+<div class="l-layout">
+	<header class="header">
+		<div class="l-container">
+			<a class="header__logo" href="#"></a>
+			<div class="header__main">
+				<div class="header__top">
+					<div class="header__nav js-nav">
+						<button class="btn btn_green js-nav-btn">Выбор раздела</button>
+						<nav class="header__nav-list js-nav-list">
+							<a href="#">О компании</a>
+							<a href="#">Акции</a>
+							<a href="#">Наши партнеры</a>
+							<a href="#">Новости</a>
+							<a href="#">Контакты</a>
+						</nav>
+					</div>
+					<div class="header__set">
+						<div class="select js-select">
+						    <span class="select__text js-select-text">dfgdfg</span>
+						    <input type="hidden" class="js-select-input" value="0">
+						    <ul class="select__list js-select-list">
+						        <li data-id="0">рус</li>
+						        <li data-id="1">eng</li>
+						        <li data-id="2">ukr</li>
+						    </ul>
+						</div>
+						<a href="#" class="btn-simple">Войти<span> как клиент</span></a>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__btns js-nav">
+						<a href="#" class="btn js-nav-btn btn_violet header__btns-key">
+							<div>
+								<span>Выбор</span>
+								<strong>Кредита</strong>
+							</div>
+						</a>
+						<div class="js-nav-list header__btns-wrap">
+							<a href="#" class="btn btn_violet">
+								<div>
+									<span>Кредиты</span>
+									<strong>наличными</strong>
+								</div>
+							</a>
+							<a href="#" class="btn btn_violet">
+								<div>
+									<span>Кредиты на </span>
+									<strong>ABTO</strong>
+								</div>
+							</a>
+							<a href="#" class="btn btn_violet">
+								<div>
+									<span>Кредиты на товары</span>
+									<strong>в интернете</strong>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="header__cont">
+						<div class="header__phone">
+							<span>Телефон:</span>
+							<div>0-800 <strong>508-707</strong></div>
+						</div>
+						<div class="header__call">
+							<a href="#" class="btn-call">
+								<span class="btn-call__icon"><i></i></span>
+								<span>Перезвоните мне</span>
+							</a>
+							<a href="#" class="header__feedback">Обратный звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="big-slider">
+        <div class="cycle-slideshow"  
+            data-cycle-fx="scrollHorz"
+            data-cycle-speed="400"
+            data-cycle-timeout="0"
+            data-cycle-slides=".js-big-slider-item"
+            data-cycle-pager=".js-big-sldier-pager"
+            data-cycle-pager-template="<button></button>"
+            data-cycle-pager-active-class="is-active"
+            data-cycle-swipe=true
+            >
+            <div class="big-slider__item js-big-slider-item">
+                <div class="l-container">
+                    <div class="big-slider__title">
+                    	Потребительский кредит от
+						<strong>КредитМаркет</strong>
+                    </div>
+                    <div class="big-slider__text">
+                    	<p>Теперь Вы имеете возможность быстро и выгодно получить деньги в кредит. Мы сделали условия кредитования максимально </p>
+                    </div>
+                </div>
+                <div class="big-slider__bg">
+                    <img src="img/slider1.jpg" alt="">
+                </div>
+            </div>
+            <div class="big-slider__item js-big-slider-item">
+                <div class="l-container">
+                    <div class="big-slider__title">
+                    	Потребительский кредит от
+						<strong>КредитМаркет</strong>
+                    </div>
+                    <div class="big-slider__text">
+                    	<p>Теперь Вы имеете возможность быстро и выгодно получить деньги в кредит. Мы сделали условия кредитования максимально </p>
+                    </div>
+                </div>
+                <div class="big-slider__bg">
+                    <img src="img/slider1.jpg" alt="">
+                </div>
+            </div>
+            <div class="big-slider__item js-big-slider-item">
+                <div class="l-container">
+                    <div class="big-slider__title">
+                    	Потребительский кредит от
+						<strong>КредитМаркет</strong>
+                    </div>
+                    <div class="big-slider__text">
+                    	<p>Теперь Вы имеете возможность быстро и выгодно получить деньги в кредит. Мы сделали условия кредитования максимально </p>
+                    </div>
+                </div>
+                <div class="big-slider__bg">
+                    <img src="img/slider1.jpg" alt="">
+                </div>
+            </div>
+            <div class="big-slider__item js-big-slider-item">
+                <div class="l-container">
+                    <div class="big-slider__title">
+                    	Потребительский кредит от
+						<strong>КредитМаркет</strong>
+                    </div>
+                    <div class="big-slider__text">
+                    	<p>Теперь Вы имеете возможность быстро и выгодно получить деньги в кредит. Мы сделали условия кредитования максимально </p>
+                    </div>
+                </div>
+                <div class="big-slider__bg">
+                    <img src="img/slider1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="l-container">
+	        <div class="big-slider__pagin js-big-sldier-pager">
+	        </div>
+	    </div>
+    </div>
+    <div class="l-container wrap-calc">
+		<div class="calc">
+			<div class="calc__main">
+		    	<div class="calc__title">Рассчитать кредит</div>
+		    	<div class="calc__btns">
+			    	<a href="#" class="btn btn_violet is-active">Наличными</a>
+			    	<a href="#" class="btn btn_violet">В интернете</a>
+			    	<a href="#" class="btn btn_violet">На авто</a>
+			    </div>
+			    <div class="range range_uah">
+			    	<div class="range__title">Сумма кредита</div>
+			    	<div class="range__input">
+			    		<input class="js-ui-slider-input" type="text">
+			    		<span class="range__label">UAH</span>
+			    	</div>
+			    	<div class="range__slider">
+			    		<div class="ui-slider js-ui-slider-uah"></div>
+						<div class="range__counter">
+				    		<span>0</span>
+				    		<span>25 000</span>
+				    		<span>50 000</span>
+				    		<span>75 000</span>
+				    		<span>100 000</span>
+				    	</div>
+			    	</div>
+			    </div>
+			    <div class="range range_month">
+			    	<div class="range__title">Срок кредита</div>
+			    	<div class="range__input">
+			    		<input class="js-ui-slider-input" type="text">
+			    		<span class="range__label">Мес.</span>
+			    	</div>
+			    	<div class="range__slider">
+			    		<div class="ui-slider js-ui-slider-month"></div>
+						<div class="range__counter">
+				    		<span>0</span>
+				    		<span>12</span>
+				    		<span>24</span>
+				    		<span>36</span>
+				    	</div>
+			    	</div>
+			    </div>
+			</div>
+		    <div class="calc__footer">
+		    	<div>Ежемесячный платеж:</div>
+		    	<div class="calc__pay">
+		    		<span>989</span> UAH
+		    	</div>
+		    	<div><button class="btn btn_green">Оформить кредит</button></div>
+		    </div>
+	    </div>
+	</div>
+	<div class="index-row l-container">
+		<a class="index-row__item index-banner index-banner_pink" href="#">
+			<div class="index-banner__in">
+				<i class="icon-ban-percent"></i>
+				АКЦИИ
+			</div>
+		</a>
+		<a class="index-row__item index-banner index-banner_blue" href="#">
+			<div class="index-banner__in">
+				<i class="icon-ban-point"></i>
+				Наши отделения
+			</div>
+		</a>
+		<div class="index-row__item news-slider">
+			<div class="news-slider__title"><a href="#">Новости</a></div>
+			<div class="news-slider__nav">
+				<button class="news-slider__prev js-news-prev"></button>
+				<button class="news-slider__next js-news-next"></button>
+			</div>
+			<div class="news-slider__main cycle-slideshow" 
+		    data-cycle-fx="scrollHorz" 
+		    data-cycle-timeout="5000"
+		    data-cycle-slides="> div"
+		    data-cycle-prev=".js-news-prev"
+		    data-cycle-next=".js-news-next"
+		    data-cycle-swipe=true
+		    >
+				<div class="news-slider__slide">
+					<div class="news-slider__item">
+						<span>23/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+					<div class="news-slider__item">
+						<span>09/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+				</div>	
+				<div class="news-slider__slide">
+					<div class="news-slider__item">
+						<span>23/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+					<div class="news-slider__item">
+						<span>09/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+				</div>
+				<div class="news-slider__slide">
+					<div class="news-slider__item">
+						<span>23/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+					<div class="news-slider__item">
+						<span>09/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+				</div>
+				<div class="news-slider__slide">
+					<div class="news-slider__item">
+						<span>23/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+					<div class="news-slider__item">
+						<span>09/12</span>
+						<div>
+							<a href="#">Онлайн-кредитование увеличит интернет-продажи на треть,</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="push"></div>
+</div>
+
+<footer class="footer">
+	<div class="l-container">
+		<div class="footer__info">
+			<div class="footer__logo">
+				<i></i>
+				<div><p>© 2014 Кредит маркет</p>
+				<p>Все права защищены</p></div>
+			</div>
+			<div class="footer__created">
+				<i></i>
+				<div><p>Разработано в</p>
+				<p><a href="#">Sparkle Design</a></p></div>
+			</div>
+		</div>
+		<div class="soc">
+			<a href="#" class="soc__vk"></a>
+			<a href="#" class="soc__fb"></a>
+			<a href="#" class="soc__od"></a>
+			<a href="#" class="soc__gp"></a>
+		</div>
+		<ul class="footer__nav">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Карта сайта</a></li>
+			<li><a href="#">Юридическая информация</a></li>
+		</ul>
+		<div class="footer__right">
+			<a href="#" class="btn-wtf">
+				<i>?</i>
+				<span>Как погасить кредит</span>
+			</a>
+			<div class="footer__search">
+				<input type="text">
+				<i></i>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="overlay js-overlay" style="display:block"></div>
+<div class="popup-wrap js-popup" style="display:block">
+	<div class="popup popup_m">
+		<div class="popup__title">Вход</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
+</body>
+</html>
