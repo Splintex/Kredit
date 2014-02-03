@@ -238,7 +238,8 @@ a:hover { text-decoration: none; }
 
 .bread { margin: 18px 0 27px; font-size: 0; }
 .bread a, .bread span { display: inline-block; vertical-align: middle; color: white; height: 25px; line-height: 25px; font-size: 13px; }
-.bread a { position: relative; padding: 0 11px; background: #a6ce38; text-decoration: none; border-bottom: 2px solid #5d7a0f; }
+.bread a { position: relative; padding: 0 11px 0 28px; background: #a6ce38; text-decoration: none; border-bottom: 2px solid #5d7a0f; }
+.bread a:first-child { padding: 0 11px; }
 .bread a:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bedc5f), color-stop(100%, #a7cf3b)); background-image: -webkit-linear-gradient(#bedc5f, #a7cf3b); background-image: -moz-linear-gradient(#bedc5f, #a7cf3b); background-image: -o-linear-gradient(#bedc5f, #a7cf3b); background-image: linear-gradient(#bedc5f, #a7cf3b); }
 .bread a:hover:after { right: -12px; background: url('../img/icons-s3adaf71889.png') 0 -441px no-repeat; width: 13px; height: 25px; }
 .bread a:active { top: 1px; border-bottom: 0; }
