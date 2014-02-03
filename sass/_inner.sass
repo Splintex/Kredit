@@ -313,16 +313,20 @@
 				+border-radius(50%)
 				background: #2e3134
 	table
-		margin-bottom: 18px
+		margin: 18px 0
 		width: 100%
 		background: #fff 
+		+box-shadow(0 0 5px rgba(0,0,0,.3))
 		+r(step480)
 			font-size: 11px	
 		thead
 			tr
 				background: #fff 
+				&:nth-child(2n+1)
+					background: #fff 
 			td
 				margin-bottom: 11px
+				padding: 20px
 				font-size: 18px
 				font-weight: bold
 				color: #662d91
