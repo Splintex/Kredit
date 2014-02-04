@@ -720,14 +720,22 @@
 		font-size: 24px
 	+r(step760)
 		font-size: 20px
-		
+.l-col-wrap
+	margin-bottom: 5.4%	
+	+clr
 .l-col 
 	width: 49%
-	float: right
+	float: right 
+	+r(step680)
+		float: none
+		width: 100%
 	&:first-child
 		float: left
+		+r(step680)
+			float: none
 .calc_static
 	position: static
+	margin-bottom: 20px
 	padding: 0
 	width: 100%
 	.calc__footer
@@ -744,6 +752,10 @@
 	border-bottom: 1px solid #5b3975 
 .calc__form
 	padding: 3.5% 6% 6%
+	+r(step800)
+		.tip
+			right: 20px
+			top: 0
 	.input-item
 		border-top: 1px solid #5a277b
 		&:first-child
@@ -764,12 +776,19 @@
 	font-weight: bold
 	font-size: 15px
 	+box
+	+r(step800)
+		display: block
+		margin-bottom: 5px
+		width: 100%		
 .input-item__main
 	display: inline-block
 	vertical-align: middle
 	width: 55%
 	+box
 	font-size: 0
+	+r(step800)
+		display: block
+		width: 100%	
 	p
 		margin-top: 10px
 		font-size: 12px
@@ -788,6 +807,8 @@
 	.input_val
 		margin-right: 12px
 		width: 70%
+		+r(step680)
+			width: 80%
 .tip
 	position: absolute
 	display: none
@@ -835,13 +856,79 @@
 .quest
 	background: #fff
 	box-shadow: 0 1px 4px #c7cdd3 
+	+r(step800)
+		.tip
+			right: 20px
+			top: 0
 	.input_gray
 		height: 34px
 		background: #f1f1f1
 		box-shadow: inset 0 1px 2px #c0c0c0
 	.input-item__title
 		width: 32%
+		+r(step800)
+			width: 100%
 	.input-item__main
 		width: 68%
+		+r(step800)
+			width: 100%  
 .quest__wrap
-	padding: 0 6% 
+	padding: 2px 6% 
+.quest__bottom
+	padding: 17px 6% 
+	font-size: 12px
+	+g(#edeff1 5%, #fff)
+	ul
+		margin: 13px 0 
+	li
+		position: relative
+		padding-left: 24px
+		&:before
+			content: ""
+			position: absolute
+			left: 5px
+			top: 4px
+			width: 7px
+			height: 7px
+			background: #000  
+			+border-radius(50%) 
+.quest__title
+	margin-bottom: 14px
+	font-size: 19px
+	font-weight: bold
+.quest__footer
+	padding: 17px 0 24px 
+	text-align: center
+	border-top: 1px solid #eef0f1 
+	.btn
+		font-size: 15px
+		height: 39px
+		font-weight: bold
+.select_gray 
+	.select__text	
+		display: block
+		background: #e8e8e8
+		border: 0
+		height: 34px
+		font-size: 13px
+		color: #2e3134
+		line-height: 34px  
+		text-transform: capitalize 
+		border-bottom: 1px solid #ccc 
+		&:after
+			+s(arr7)
+			right: 17px
+	.select__list
+		border: 0
+		background: #e8e8e8
+		font-size: 13px
+		color: #2e3134
+.select_date
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	width: 61px
+.select_year
+	display: inline-block
+	vertical-align: middle
+	width: 75px
