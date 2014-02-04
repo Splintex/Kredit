@@ -633,13 +633,13 @@
 .window
 	position: absolute
 	top: -424px
-	right: 0
+	right: 5px
 	z-index: 1000
 	padding: 22px 20px 20px
 	width: 336px
 	+box
 	color: #f3dfff
-	background: #6b2f8f 
+	background: #6b2f8f    
 	+r(step960)
 		top: -345px
 	+r(step860)
@@ -720,3 +720,128 @@
 		font-size: 24px
 	+r(step760)
 		font-size: 20px
+		
+.l-col 
+	width: 49%
+	float: right
+	&:first-child
+		float: left
+.calc_static
+	position: static
+	padding: 0
+	width: 100%
+	.calc__footer
+		padding: 13% 0 15%
+		background: #4a1f69 
+	.calc__pay
+		margin: 14px 0 0
+		div
+			margin-bottom: 17px
+.calc__credit
+	display: inline-block
+	margin-bottom: 23px
+	padding-bottom: 20px
+	border-bottom: 1px solid #5b3975 
+.calc__form
+	padding: 3.5% 6% 6%
+	.input-item
+		border-top: 1px solid #5a277b
+		&:first-child
+			border-top: 0
+.input-item
+	position: relative
+	padding: 14px 0 
+	font-size: 0
+	text-align: left
+	&.is-error
+		.input
+			border: 1px solid #f06666
+.input-item__title
+	display: inline-block
+	vertical-align: middle
+	padding-right: 10px
+	width: 45%
+	font-weight: bold
+	font-size: 15px
+	+box
+.input-item__main
+	display: inline-block
+	vertical-align: middle
+	width: 55%
+	+box
+	font-size: 0
+	p
+		margin-top: 10px
+		font-size: 12px
+		color: #4a4d4f  
+		text-align: center
+		font-family: Arial,sans-serif 
+	.input
+		background: #f6e8ff
+		&:focus
+			background: #fff 
+	.input,span
+		display: inline-block
+		font-size: 15px
+		vertical-align: middle
+		font-weight: normal
+	.input_val
+		margin-right: 12px
+		width: 70%
+.tip
+	position: absolute
+	display: none
+	right: -13px
+	top: -13px
+	padding: 9px 10px 
+	background: #fff
+	font-size: 11px
+	color: #f06666
+	text-align: center  
+	box-shadow: 0 0 2px rgba(0,0,0,.4)
+	&:after
+		content: ""
+		position: absolute
+		bottom: -4px
+		left: 17px
+		z-index: 2
+		+arr(8,5,#fff,b) 
+	&:before
+		content: ""
+		position: absolute
+		bottom: -6px
+		left: 16px
+		z-index: 1
+		+arr(10,6,rgba(0,0,0,.1),b) 
+.select_white 
+	.select__text	
+		display: block
+		background: #f6e8ff
+		border: 0
+		height: 31px
+		font-size: 15px
+		color: #300c46
+		line-height: 31px  
+		text-transform: capitalize 
+		border-bottom: 1px solid #421f58  
+		&:after
+			+s(arr7)
+			right: 17px
+	.select__list
+		border: 0
+		background: #f6e8ff
+		font-size: 15px
+		color: #300c46
+.quest
+	background: #fff
+	box-shadow: 0 1px 4px #c7cdd3 
+	.input_gray
+		height: 34px
+		background: #f1f1f1
+		box-shadow: inset 0 1px 2px #c0c0c0
+	.input-item__title
+		width: 32%
+	.input-item__main
+		width: 68%
+.quest__wrap
+	padding: 0 6% 
