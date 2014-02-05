@@ -796,6 +796,7 @@
 		text-align: center
 		font-family: Arial,sans-serif 
 	.input
+		padding: 0 15px 
 		background: #f6e8ff
 		&:focus
 			background: #fff 
@@ -837,6 +838,7 @@
 .select_white 
 	.select__text	
 		display: block
+		padding: 0 15px 
 		background: #f6e8ff
 		border: 0
 		height: 31px
@@ -845,14 +847,23 @@
 		line-height: 31px  
 		text-transform: capitalize 
 		border-bottom: 1px solid #421f58  
+		&:hover
+			+g(#fcf7ff, #ebccff)
+
 		&:after
 			+s(arr7)
 			right: 17px
 	.select__list
 		border: 0
+		border-bottom: 1px solid #421f58 
+		padding: 1px 
 		background: #f6e8ff
 		font-size: 15px
 		color: #300c46
+		li
+			padding: 6px 14px
+			&:hover
+				background: #c8add9  
 .quest
 	background: #fff
 	box-shadow: 0 1px 4px #c7cdd3 
@@ -896,6 +907,9 @@
 	margin-bottom: 14px
 	font-size: 19px
 	font-weight: bold
+	a
+		color: #2e3134 
+		text-decoration: none
 .quest__footer
 	padding: 17px 0 24px 
 	text-align: center
@@ -904,9 +918,10 @@
 		font-size: 15px
 		height: 39px
 		font-weight: bold
-.select_gray 
+.select_gray   
 	.select__text	
 		display: block
+		padding: 0 15px 
 		background: #e8e8e8
 		border: 0
 		height: 34px
