@@ -1,0 +1,415 @@
+$green: #a6ce38
+$green_dark: #5d7a0f
+$violet: #8e5bac
+$violet_dark: #441a61
+$gray: #5e656d
+
+.anketa-frame
+	padding: 0 10px
+	margin: 0 auto 
+	max-width: 1008px 
+	+font
+	font-size: 13px
+	line-height: 1.2
+	font-weight: 400 
+	+scrollbar
+		width: 14px
+	+scrollbar-track	
+		background: #bec3c3
+	+scrollbar-thumb
+		background: #bec3c3
+	+scrollbar-track-piece   
+		background: #e1e1e1 
+	img,fieldset, a img
+		border: none
+	input[type="submit"],
+	button
+		cursor: pointer
+		&::-moz-focus-inner
+			padding: 0
+			border: 0
+	textarea 
+		overflow: auto
+	input, button 
+		margin: 0
+		padding: 0
+		border: 0
+	input, textarea, select,button,
+	h1,h2,h3,h4,h5,h6,a,span,a:focus 
+		outline: none
+	ul,ol    
+		list-style-type: none 
+		margin: 0
+		padding: 0
+	+iphone
+		*   
+			-webkit-text-size-adjust: none
+	table
+		border-spacing: 0
+		border-collapse: collapse
+		width: 100%
+	
+	.select
+		position: relative
+		cursor: pointer
+	.select__text
+		position: relative
+		display: block
+		+box
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+	.select__list
+		position: absolute
+		display: none  
+		left: 0
+		right: 0
+		top: 100%
+		max-height: 120px
+		overflow-y: auto
+		overflow-x: hidden
+		text-align: left
+		z-index: 100
+		li
+			cursor: pointer
+			line-height: 1
+		a
+			display: block
+			text-decoration: none 
+			 
+	.btn
+		display: inline-block
+		vertical-align: middle
+		padding: 6px 12px
+		color: #fff 
+		font-size: 13px
+		text-decoration: none
+		+tr(background .2s linear)
+		+box
+		strong
+			display: block
+			text-transform: uppercase
+	.btn_green
+		background: $green  
+		+box-shadow(inset 0 1px 0 rgba(255,255,255,.1))
+		border-bottom: 2px solid $green_dark
+		&:hover 
+			+g(#bedc5d,#a7cf3c)
+		&:active
+			border-bottom: 0
+			position: relative
+			top: 2px
+		&.is-active
+			background: $green_dark 
+	 
+	.title
+		margin-bottom: 23px
+		font-weight: bold
+		font-size: 30px
+		color: #662d91
+
+	.input-wrap
+		display: block
+		margin-bottom: 13px
+		span
+			display: block
+			margin-bottom: 5px
+			font-size: 13px
+			font-weight: bold
+			color: #f3dfff 
+	.input
+		display: block
+		padding: 0 10px 
+		width: 100%
+		height: 31px
+		+box    
+		+font
+		font-weight: bold
+		background: #fff
+		+box-shadow(inset 0 1px 1px rgba(27,0,42,.75)) 
+		&:focus
+			+box-shadow(none) 
+	.input_gray
+		height: 34px
+		background: #f1f1f1
+		box-shadow: inset 0 1px 2px #c0c0c0
+	.textarea
+		padding: 10px 
+		height: 90px
+		resize: none
+		border: 0
+	.calc
+		position: absolute
+		right: 10px
+		top: -464px
+		z-index: 200
+		padding: 16px 0 15px
+		+box
+		color: #f3dfff
+		text-align: center 
+		width: 337px
+		background: rgba(91,25,131,.9)
+	.calc__main
+		padding: 0 18px 17px 23px 
+	.calc__title
+		margin-bottom: 17px
+		font-size: 24px   
+		text-align: left
+	.calc__btns
+		font-size: 0
+		&:after
+			content: ""
+			width: 100%
+			height: 0
+			display: inline-block 
+		.btn
+			margin-left: 13px
+			&:first-child
+				margin-left: 0
+	.calc__footer
+		padding-top: 9px
+		font-size: 17px
+		+box-shadow(0 -1px 3px rgba(0,0,0,.2))
+		.btn
+			font-size: 15px
+			text-transform: uppercase
+			font-weight: bold
+			height: 37px
+			+font
+	.calc__pay
+		position: relative
+		margin-bottom: 19px
+		display: inline-block
+		font-size: 17px
+		line-height: 1
+		&:before,
+		&:after
+			content: "—" 
+			position: absolute
+			top: 50%
+			margin-top: -7px
+			color: #fff 
+			line-height: 1
+			font-size: 14px
+		&:before
+			left: -23px
+		&:after
+			right: -23px
+		span
+			font-size: 48px
+			font-weight: bold
+	.l-col-wrap
+		display: table
+	.l-col 
+		width: 49%
+		display: table-cell
+		vertical-align: top
+		background: #fff 
+		&:first-child
+			background: #4a1f69 
+	.l-sep
+		display: table-cell
+		width: 2%	
+		vertical-align: top
+	.calc_static
+		position: static
+		margin-bottom: 20px
+		padding: 0
+		width: 100%
+		.calc__footer
+			padding: 13% 0 15%
+			background: #4a1f69 
+		.calc__pay
+			margin: 14px 0 0
+			div
+				margin-bottom: 17px
+	.calc__credit
+		display: inline-block
+		margin-bottom: 23px
+		padding-bottom: 20px
+		border-bottom: 1px solid #5b3975 
+	.calc__form
+		padding: 3.5% 6% 6%
+		.input-item
+			border-top: 1px solid #5a277b
+			&:first-child
+				border-top: 0
+	.input-item
+		position: relative
+		padding: 14px 0 
+		font-size: 0
+		text-align: left
+		&.is-error
+			.input
+				border: 1px solid #f06666
+	.input-item__title
+		display: inline-block
+		vertical-align: middle
+		padding-right: 10px
+		width: 45%
+		font-weight: bold
+		font-size: 15px
+		+box	
+	.input-item__main
+		display: inline-block
+		vertical-align: middle
+		width: 55%
+		+box
+		font-size: 0
+		p
+			margin-top: 10px
+			font-size: 12px
+			color: #4a4d4f  
+			text-align: center
+			font-family: Arial,sans-serif 
+		.input
+			padding: 0 15px 
+			background: #f6e8ff
+			&:focus
+				background: #fff 
+		.input,span
+			display: inline-block
+			font-size: 15px
+			vertical-align: middle
+			font-weight: normal
+		.input_val
+			margin-right: 12px
+			width: 70%
+	.tip
+		position: absolute
+		display: none
+		right: -13px
+		top: -13px
+		padding: 9px 10px 
+		background: #fff
+		font-size: 11px
+		color: #f06666
+		text-align: center  
+		box-shadow: 0 0 2px rgba(0,0,0,.4)
+		&:after
+			content: ""
+			position: absolute
+			bottom: -4px
+			left: 17px
+			z-index: 2
+			+arr(8,5,#fff,b) 
+		&:before
+			content: ""
+			position: absolute
+			bottom: -6px
+			left: 16px
+			z-index: 1
+			+arr(10,6,rgba(0,0,0,.1),b) 
+	.quest
+		background: #fff
+		box-shadow: 0 1px 4px #c7cdd3 
+		.input_gray
+			height: 34px
+			background: #f1f1f1
+			box-shadow: inset 0 1px 2px #c0c0c0
+	.quest__wrap
+		padding: 2px 6% 
+	.quest__bottom
+		padding: 17px 6% 
+		font-size: 12px
+		background: #edeff1 
+		+g(#edeff1 5%, #fff)
+		ul
+			margin: 13px 0 
+		li
+			position: relative
+			padding-left: 24px
+			&:before
+				content: ""
+				position: absolute
+				left: 5px
+				top: 4px
+				width: 7px
+				height: 7px
+				background: #000  
+				+border-radius(50%) 
+	.quest__title
+		margin-bottom: 14px
+		font-size: 19px
+		font-weight: bold
+		a
+			color: #2e3134 
+			text-decoration: none
+	.quest__footer
+		padding: 17px 0 24px 
+		text-align: center
+		border-top: 1px solid #eef0f1 
+		.btn
+			font-size: 15px
+			height: 39px
+			font-weight: bold
+	.select_gray   
+		.select__text	
+			display: block
+			padding: 0 15px 
+			background: #e8e8e8
+			border: 0
+			height: 34px
+			font-size: 13px  
+			color: #2e3134
+			line-height: 34px  
+			text-transform: capitalize 
+			border-bottom: 1px solid #ccc 
+			&:after
+				content: ""
+				position: absolute
+				top: 50% 
+				margin-top: -3px
+				+s(arr2)
+				right: 9px
+		.select__list
+			border: 0
+			padding: 1px 
+			background: #e8e8e8
+			font-size: 13px
+			color: #2e3134
+			li
+				padding: 0 15px 
+				height: 25px
+				line-height: 25px
+				&:hover
+					background: #d8d8d8 
+	.select_date
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+		width: 61px
+	.select_year
+		display: inline-block
+		vertical-align: middle
+		width: 75px
+
+	.select_white
+		font-size: 15px
+		color: #300c46  
+		.select__text 
+			display: block
+			padding: 0 15px 
+			height: 29px
+			line-height: 29px
+			background: #f3e0ff  
+			+g(#fcf7ff, #ebccff)
+			border-bottom: 1px solid #421f58 
+			&:after
+				content: ""
+				position: absolute
+				top: 50%
+				right: 13px 
+				margin-top: -3px 
+				+s(arr1)
+		.select__list
+			border-bottom: 1px solid #421f58 
+			padding: 1px 
+			background: #f6e8ff 
+		li
+			padding: 0 15px
+			height: 29px
+			line-height: 29px 
+			&:hover
+				background: #c8add9 
+			
