@@ -205,8 +205,10 @@ $gray: #5e656d
 		display: table-cell
 		vertical-align: top
 		background: #fff 
+		+box-shadow(0 1px 4px #c7cdd3)
 		&:first-child
 			background: #4a1f69 
+			+box-shadow(none)
 	.l-sep
 		display: table-cell
 		width: 2%	
@@ -302,7 +304,6 @@ $gray: #5e656d
 			+arr(10,6,rgba(0,0,0,.1),b) 
 	.quest
 		background: #fff
-		box-shadow: 0 1px 4px #c7cdd3 
 		.input_gray
 			height: 34px
 			background: #f1f1f1
