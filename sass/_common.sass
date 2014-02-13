@@ -21,11 +21,17 @@ body
 	background: #eaedee url(../img/bg.png) 0 0 repeat 
 	&.is-popup-open
 		overflow: hidden
+	&.index-page
+		.l-layout	 
+			margin-bottom: -120px
+		.push,
+		.footer
+			height: 120px
 a
 	&:hover
 		text-decoration: none
 .l-layout	 
-	margin: 0 auto -120px
+	margin: 0 auto -350px
 	position: relative
 	min-height: 100%
 	height: auto !important
@@ -36,7 +42,7 @@ a
 	+clr
 .push
 	clear: both
-	height: 120px
+	height: 350px
 .l-container
 	padding: 0 10px
 	margin: 0 auto 
@@ -313,11 +319,10 @@ a
 
 .footer
 	position: relative
-	padding-top: 21px
 	z-index: 2
-	height: 120px
 	+box
-	background: url(../img/footer-bg.png) 0 0 repeat 
+	height: 350px
+	overflow: hidden
 	.l-container
 		+clr
 	.soc
@@ -332,6 +337,12 @@ a
 		+r(step480)
 			right: 5px
 			left: auto
+.footer__in
+	+box
+	padding-top: 21px
+	height: 121px
+	overflow: hidden
+	background: url(../img/footer-bg.png) 0 0 repeat 
 .footer__info
 	float: left
 	margin-right: 9%
