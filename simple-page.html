@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>News</title>
+	<title>Simple page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
@@ -90,14 +90,11 @@
 		<nav class="bread">
 			<a href="#">Главная страница</a>
 			<a href="#">bla-bla</a>
-			<span>Новости</span>
+			<span>простая страничка</span>
 		</nav>
 		<h1 class="title">На «Автобазар» - за авто в кредит от «КредитМаркет»!</h1>
 		<div class="date"><i></i>06/01/2014</div>
-		<div class="article-banner">
-			<a href="#"><img src="http://lorempixel.com/318/157" alt="" width="318" height="157"></a>
-		</div>
-		<article class="article">
+		<article class="article article_small">
 			<p>Купить автомобиль в кредит без страхового полиса «КАСКО» теперь можно не вставая с дивана! Розничная финансовая сеть «КредитМаркет» в партнерстве с ведущим веб-порталом AVTOBAZAR.UA внедрили уникальный онлайн-сервис по кредитованию покупки подержанных автомобилей. Благодаря этому у покупателей появилась возможность купить в кредит легковой автомобиль, выбранный среди тысяч предложений портала <a href="#">AVTOBAZAR.UA.</a> Данная услуга выгодна как покупателям, так и продавцам – ведь теперь продать автомобиль стало намнzого легче благодаря гибким процессам и технологиям!</p>
 			<p>Чтобы воспользоваться преимуществами кредитной программы от «КредитМаркет», Вам необходимо выбрать нужное объявление и нажать на опцию «Кредит без <a href="#">КАСКО»</a>. После этого заполните онлайн-заявку и рассчитайте платеж по кредиту. Для уточнения информации и выбора удобного отделения для получения кредита с Вами свяжется менеджер «КредитМаркет».</p>
 			<p>Согласно условиям программы, Вы можете получить кредит на сумму от 20 тыс. грн. до 100 тыс. грн. <strong>Срок погашения займа – до 48 месяцев!</strong></p>
@@ -152,6 +149,59 @@
 					</tr>
 				</table>
 		</article>
+		<div class="article-meta">
+			<div class="calc calc_meta">
+				<div class="calc__main">
+			    	<div class="calc__title">Рассчитать кредит</div>
+			    	<div class="calc__btns">
+				    	<a href="#" class="btn btn_violet is-active">Наличными</a>
+				    	<a href="#" class="btn btn_violet">В интернете</a>
+				    	<a href="#" class="btn btn_violet">На авто</a>
+				    </div>
+				    <div class="range range_uah">
+				    	<div class="range__title">Сумма кредита</div>
+				    	<div class="range__input">
+				    		<input class="js-ui-slider-input" type="text">
+				    		<span class="range__label">UAH</span>
+				    	</div>
+				    	<div class="range__slider">
+				    		<div class="ui-slider js-ui-slider-uah"></div>
+							<div class="range__counter">
+					    		<span>0</span>
+					    		<span>25 000</span>
+					    		<span>50 000</span>
+					    		<span>75 000</span>
+					    		<span>100 000</span>
+					    	</div>
+				    	</div>
+				    </div>
+				    <div class="range range_month">
+				    	<div class="range__title">Срок кредита</div>
+				    	<div class="range__input">
+				    		<input class="js-ui-slider-input" type="text">
+				    		<span class="range__label">Мес.</span>
+				    	</div>
+				    	<div class="range__slider">
+				    		<div class="ui-slider js-ui-slider-month"></div>
+							<div class="range__counter">
+					    		<span>0</span>
+					    		<span>12</span>
+					    		<span>24</span>
+					    		<span>36</span>
+					    	</div>
+				    	</div>
+				    </div>
+				</div>
+			    <div class="calc__footer">
+			    	<div>Ежемесячный платеж:</div>
+			    	<div class="calc__pay">
+			    		<span>989</span> UAH
+			    	</div>
+			    	<div><button class="btn btn_green">Оформить кредит</button></div>
+			    </div>
+		    </div>
+			<a href="#"><img src="http://lorempixel.com/318/157" alt="" width="318" height="157"></a>
+		</div>
 	</div>
 	<div class="push"></div>
 </div>
