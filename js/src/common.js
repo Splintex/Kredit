@@ -85,4 +85,34 @@ $(document).ready(function() {
     $('.js-popup .popup').click(function(event){
         event.stopPropagation();
     });
+    function masonry_init() {
+        $(".js-masonry").masonry({
+            itemSelector : '.js-masonry-item',
+            isResizable: true,
+            gutter: 22,
+            transitionDuration: .1
+        });
+    } 
+    function masonry_destroy() {
+        $(".js-masonry").masonry('destroy');
+    } 
+    if ($(window).width() > 480) {
+        $('.js-masonry-item img').load(function() {
+            masonry_init();
+        });
+    } 
+    else {
+        $('.js-masonry-item img').load(function() {
+            masonry_destroy();
+        });
+    }
+    
+    $(window).resize(function(){
+        if ($(window).width() > 480) {
+            masonry_init();
+        }  
+        else {
+            masonry_destroy();
+        }
+    });
 });
