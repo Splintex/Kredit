@@ -1,24 +1,31 @@
 .news-wrap
 	+clr
 .news
-	float: left
-	vertical-align: top
+	//float: left
+	//vertical-align: top
 	width: 48.6%
-	margin-bottom: 2.9%		
+	margin-bottom: 20px
 	font-size: 13px
 	background: #f5f6f6 
 	+box-shadow(1px 1px 5px #c7cdd3)
-	+tr(all .2s linear)
+	+tr(box-shadow .2s linear)
+	+r(step860)
+		width: 30%
+	+r(step760)
+		width: 45%
+	+r(step520)
+		width: 38%
 	+r(step480)
-		float: none
-		margin: 0 auto 15px
+		margin: 0 auto 20px
 		width: 90%
+		position: static !important
+		-webkit-transform: translate3d(0, 0, 0) !important
 	&:hover
 		+box-shadow(none)
-	&:nth-child(2n)
-		float: right
-		+r(step480)
-			float: none
+	// &:nth-child(2n)
+	// 	float: right
+	// 	+r(step480)
+	// 		float: none
 .news__img
 	position: relative 
 	float: left

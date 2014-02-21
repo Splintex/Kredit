@@ -6,6 +6,7 @@ $step860: 860px
 $step800: 800px
 $step760: 760px
 $step680: 680px
+$step520: 520px
 $step480: 480px
 $step450: 450px
 $step360: 360px
@@ -32,6 +33,9 @@ $step320: 320px
 			@content
 	@if $media == step680
 		@media only screen and (max-width: $step680)
+			@content
+	@if $media == step520
+		@media only screen and (max-width: $step520)
 			@content
 	@if $media == step480
 		@media only screen and (max-width: $step480)
